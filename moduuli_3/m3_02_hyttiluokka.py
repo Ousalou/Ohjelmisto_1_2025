@@ -8,8 +8,6 @@
 # Jos käyttäjä syöttää kelvottoman hyttiluokan, ohjelma tulostaa Virheellinen hyttiluokka.
 
 luokka = input("Onko hyttiluokkasi Lux, A, B vai C? ").upper()
-#huom! .upper() tai .lower() että nämä saa samoiksi arvoiksi vastauksesta huolimatta
-# ! Kysymys: miksi if-lausekkeisiin piti laittaa lainausmerkkeihin jos input on aina str?
 
 if luokka == "LUX":
     print("LUX on parvekkeellinen hytti yläkannella.")
@@ -21,3 +19,6 @@ elif luokka == "C":
     print("C on ikkunaton hytti autokannen alapuolella.")
 else:
     print("Virheellinen hyttiluokka.")
+
+# huom! .upper() tai .lower() että nämä saa samoiksi arvoiksi vastauksesta huolimatta
+# huom! koska luokkien str-arvot EI ole muuttujia, ne menee lainausmerkkeihin tai tulee virhe
