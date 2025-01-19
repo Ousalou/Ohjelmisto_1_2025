@@ -6,13 +6,13 @@
 kuha_str = input("Mikä on kuhan pituus senttimetreinä? ")
 kuha = float(kuha_str)
 
-while kuha < 0
-    kuha_str = input("Mikä on kuhan pituus senttimetreinä? ")
-    kuha = float(kuha_str)
+#while kuha < 0
+ #   kuha_str = input("Mikä on kuhan pituus senttimetreinä? ")
+  #  kuha = float(kuha_str)
 # Selvitä: miten tähän saa kuhalle määritelmän, että ei ole numero?
 
 if kuha >= 37:
-    print("Voit pitää kalasi!")
+    print("Voit pitää kuhasi!")
 
 if kuha < 37:
-    print(f"Heitä kuha takaisin järveen. Se on {37-kuha}cm alamittainen!")
+    print(f"Heitä kuha takaisin järveen. Se on {37-kuha:.1f}cm alamittainen!")
