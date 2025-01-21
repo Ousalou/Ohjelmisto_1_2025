@@ -2,26 +2,23 @@
 # siihen saakka, kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
-#pitää luoda "talletus" luvuille
-#pitää selvittää miten while pyörii kaikilla mahdollisilla luvuilla, vain tyhjä syöte on break
-#jos käyttäjä syöttää merkkijonon, error mutta ei break? << ?????? Ongelma
+#1) pitää luoda "talletus" luvuille
+#2) pitää selvittää miten while pyörii kaikilla mahdollisilla luvuilla, vain tyhjä syöte on break
+#3) jos käyttäjä syöttää merkkijonon, pitää palata while-rakenteen alkuun, mutta ei break? (!!)
 
-luku = float(0)
 luvut = []
-luvut.append(luku)
 
 while True:
     luku_str = (input("Anna luku tai paina enter ohjelman lopettamiseksi: "))
     if luku_str == (""):
-        print(f"Lukujen summa on {sum(luvut):.2f}.")
+        print(f"Lukujen pienin on {min(luvut):.2f} ja suurin {max(luvut):.2f}.")
         break
-    #elif luku_str != ("") and (#luku_str on tekstiä, ei ole numero?):
-    #   luku_str = (input("Anna luku tai paina enter ohjelman lopettamiseksi: "))
-    else: luku = float(luku_str)
-    luvut.append(luku)
+    try:
+        luku = float(luku_str)
+        luvut.append(luku)
+    except ValueError:
+        print("Anna luku tai paina enter. Älä kirjoita muuta.")
 
-#miksi float antaa errorin mutta int on ok? entä jos käyttäjä syöttää murtoluvun?
-
-
+#Opettelin tähän try-except rakenteen että saan 3. vaiheen toimimaan
 
 
