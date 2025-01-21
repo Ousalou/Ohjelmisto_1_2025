@@ -4,7 +4,7 @@
 
 #1) pitää luoda "talletus" luvuille
 #2) pitää selvittää miten while pyörii kaikilla mahdollisilla luvuilla, vain tyhjä syöte on break
-#3) jos käyttäjä syöttää merkkijonon, pitää palata while-rakenteen alkuun, mutta ei break? (!!)
+#3) jos käyttäjä syöttää merkkijonon, pitää palata while-rakenteen alkuun, mutta ei break?
 
 luvut = []
 
@@ -19,6 +19,6 @@ while True:
     except ValueError:
         print("Anna luku tai paina enter. Älä kirjoita muuta.")
 
-#Opettelin tähän try-except rakenteen että saan 3. vaiheen toimimaan
+#Opettelin tähän try-except rakenteen että saan edellä 3. vaiheen toimimaan
 
 
