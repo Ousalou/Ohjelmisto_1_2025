@@ -21,14 +21,14 @@ import random
 pisteetN = 1000000
 pisteet_n = 0
 
-while pisteetN <= 1000000:
+while True:
     pisteetN = pisteetN - 1
+    if pisteetN == 0:
+        break
     x = random.uniform(-1,1)
     y = random.uniform(-1,1)
     if x**2+y**2<1:
         pisteet_n = pisteet_n + 1
-    if pisteetN == 0:
-        break
 
 print(f"Pii on {pisteet_n*4 / 1000000}.")
 
