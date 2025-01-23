@@ -5,10 +5,20 @@
 
 import random
 luku = random.randint(1,10)
-Arvaus = 0
+arvaus = float()
 
 while True:
     arvaus_str = input("Arvaa luku 1 ja 10 välillä: ")
-    try: arvaus = float(arvaus_str) and arvaus > 10 and
+    try: arvaus = float(arvaus_str)
     except ValueError:
-        "Anna "
+        print("Ei kelvollinen luku. Anna luku väliltä 1-10.")
+#Miksi ohjelma menee tässä heti seuraavaan if-lauseeseen? Tässä kohtaa pitäisi loopata alkuun.
+
+    if arvaus > 10 or arvaus < 1:
+        print("Ei kelvollinen luku. Anna luku väliltä 1-10.")
+    elif arvaus == luku:
+        print("Arvasit luvun oikein!")
+        break
+    elif arvaus > luku:
+        print("Liian suuri arvaus, arvaa uudelleen!")
+    else: print("Liian pieni arvaus, arvaa uudelleen!")
