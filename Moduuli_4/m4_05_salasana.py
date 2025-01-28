@@ -4,8 +4,8 @@
 # Edellisessä tapauksessa tulostetaan
 # Tervetuloa ja jälkimmäisessä Pääsy evätty. (Oikea käyttäjätunnus on python ja salasana rules).
 
-tunnus = str("Metro")
-salasana = str("Polia")
+tunnus = str("python")
+salasana = str("rules")
 kerrat = int(5)
 
 while True:
