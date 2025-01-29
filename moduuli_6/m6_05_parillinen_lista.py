@@ -14,3 +14,7 @@ def karsija (kokolista):
 kokolista = [1,9,2,19,2,10,20,8,44,45]
 print(kokolista)
 print(karsija(kokolista))
+
+#HUOM! Jos for-in rakenteen laittaa poistamaan arvot suoraan kokolistasta, se "raksuttaa" samaa aikaa
+#       kun käy listaa läpi = ei oikea tulos!
+# Ratkaisu >> uusi lista funktion "sisälle"
