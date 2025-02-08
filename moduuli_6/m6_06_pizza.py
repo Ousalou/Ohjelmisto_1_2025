@@ -23,6 +23,7 @@ while kyselyt <= 2:
     kyselyt = kyselyt + 1
 
 halvin = min(pizza_hinnat)
-print(f"Parasta vastinetta rahalle tarjoaa pizza numero {pizza_hinnat.index(halvin)+1}.")
+print(f"Parasta vastinetta rahalle tarjoaa pizza numero {pizza_hinnat.index(halvin)+1} :)")
+#Jälleen huom. ykkönen = 0 eli +1 että tuele oikea sijainti 1-2
 
 

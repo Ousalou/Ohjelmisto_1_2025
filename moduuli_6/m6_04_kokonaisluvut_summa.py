@@ -6,7 +6,7 @@ def numeroiden_summaus (kokonaisluku):
     summa = sum(kokonaisluku)
     return summa
 
-kokonaisluku = [1,4,5,10]
+kokonaisluku = [1,4,5,10] #pitäs olla =20
 print(numeroiden_summaus(kokonaisluku))
 
 #Huom! Funktion voi laittaa printin sisään, ei tarvitse määrittää summa = funktio, ja print(summa) erikseen
