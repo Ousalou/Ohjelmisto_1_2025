@@ -17,8 +17,8 @@ def hinta_laskuri (halkaisija, hinta):
 kyselyt = 1
 
 while kyselyt <= 2:
-    halkaisija = int(input(f"{kyselyt}:n pizzan halkaisija senttimetreinä: "))
-    hinta = int(input(f"{kyselyt}:n pizzan hinta euroina ilman euromerkkiä: "))
+    halkaisija = float(input(f"{kyselyt}:n pizzan halkaisija senttimetreinä: "))
+    hinta = float(input(f"{kyselyt}:n pizzan hinta euroina ilman euromerkkiä: "))
     print(f"Pizzan nro {kyselyt} hinta per neliömetri on {hinta_laskuri (halkaisija, hinta):.2f}€")
     kyselyt = kyselyt + 1
 
